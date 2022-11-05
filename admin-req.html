@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Requirements</title>
+</head>
+<body>
+    <div class="whole-card">
+        <h2 class="headings">Update Requirements</h2>
+        <form action="success.html" class="user-selector">
+            <div class="range-value">
+                <div class="input-container">
+                    <label class="labels">Working Hours: </label>
+                    <input type="range" min="5" max="100" value="55" class="slider" id="hrsRange" />
+                </div>
+                <p class="values">Hours: <span id="hrsRangeValue"></span></p>
+            </div>
+            <div class="range-value">
+                <div class="input-container">
+                    <label class="labels">Payment: </label>
+                    <input type="range" min="1000" max="10000" value="3000" class="slider" id="payRange" />
+                </div>
+                <p class="values">Payment: <span id="payRangeValue"></span></p>
+            </div> 
+            <div class="range-value">
+                <div class="input-container">
+                    <label class="labels">Experience(yrs): </label>
+                    <input type="range" min="1" max="10" value="4" class="slider" id="expRange" />
+                </div>
+                <p class="values">Exp yrs: <span id="expRangeValue"></span></p>
+            </div>  
+            <input type="submit" value="submit" />  
+        </form>
+    </div>
+    <script src="admin-req.js"></script>
+</body>
+</html>

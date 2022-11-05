@@ -1,0 +1,250 @@
+:root{
+    --light-blue: rgb(158,203,229);
+    --pale-blue: hsl(225, 100%, 94%);
+    --dark-blue: rgb(13,110,253);
+    --darker-blue: hsl(223, 47%, 23%);
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    /* font-family: OpenSans; */
+    font-family: 'Crimson Pro', serif;
+}
+body{
+    background-color: var(--pale-blue);
+}
+.whole-card{
+    display: flex;
+    margin-top: 55px;
+    height: 520px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.headings{
+    color: var(--darker-blue);
+    font-weight: 900;
+    font-size: 3vw;
+    text-decoration: underline;
+}
+
+.smaller-heading{
+    color: var(--darker-blue);
+    font-size: 2vw;
+    text-decoration: none;
+}
+
+.user-selector{
+    display: flex;
+    flex-direction: column;
+    height: 66%;
+    width: 30%;
+    justify-content: space-between;
+}
+
+.upper{
+    background-color: var(--dark-blue);
+    font-size: 2vw;
+    font-weight: 700;
+    height: 45%;
+    border-radius: 12px;
+    width: 100%;
+    opacity: 0.8;
+    transition: opacity .3s ease-in ;
+    cursor: pointer;
+}
+
+.lower{
+    background-color: var(--light-blue);
+    font-size: 2vw;
+    font-weight: 700;
+    border-radius: 12px;
+    height: 45%;
+    width: 100%;
+    opacity: 0.8;
+    transition: opacity .3s ease-in ;
+    cursor: pointer;
+}
+
+.upper:hover{
+    opacity: 1;
+}
+
+.lower:hover{
+    opacity: 1;
+}
+
+.slider {
+    -webkit-appearance: none;  
+    appearance: none;
+    width: 50%; 
+    height: 15px; 
+    border-radius: 5px;
+    background: #d3d3d3;
+    outline: none; 
+    opacity: 0.7; 
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+  }
+  
+.slider:hover {
+    opacity: 1; 
+}
+  
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none; 
+    appearance: none;
+    width: 25px; 
+    height: 25px; 
+    border-radius: 50%;
+    background: var(--darker-blue); 
+    cursor: pointer; 
+  }
+  
+.slider::-moz-range-thumb {
+    width: 25px; 
+    height: 25px;
+    border-radius: 50%;
+    background: var(--darker-blue); 
+    cursor: pointer;
+  }
+
+.input-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+.labels{
+    font-size: 2vw;
+    font-weight: 700;
+    text-decoration: underline;
+  }
+
+.values{
+    font-size: 1.5vw;
+    font-weight: 300;
+}
+
+input[type=text]{
+    height: 15%;
+    width: 50%;
+    border: none;
+    transition: width .3s ease-in;
+    outline: none;
+    border-bottom: 2px solid var(--dark-blue);
+}
+
+input[type=text]:hover{
+    /* box-shadow: 0px 0px 20px 1px var(--light-blue); */
+    width: 100%;
+    outline: none;
+}
+
+input[type=submit]{ 
+    cursor: pointer;
+    background-color: blue;
+    border: none;
+    color: white;
+    border-radius: 12px;
+    height: 15%;
+    font-weight: 600;
+    width: 100%;
+    transition: .2s ease-in;
+}
+
+input[type=submit]:hover{
+    opacity: 0.7;
+    box-shadow: 0px 0px 20px 1px var(--light-blue);
+}
+
+.back{
+    cursor: pointer;
+    background-color: blue;
+    margin-left: 20px;
+    border: none;
+    color: white;
+    border-radius: 12px;
+    height: 8%;
+    font-weight: 600;
+    width: 12%;
+    transition: .2s ease-in;
+    align-self: flex-start;
+}
+.back:hover{
+    opacity: 0.7;
+    box-shadow: 0px 0px 20px 1px var(--light-blue);
+}
+
+.apply{
+    cursor: pointer;
+    background-color: blue;
+    margin-left: 20px;
+    border: none;
+    color: white;
+    border-radius: 12px;
+    height: 80%;
+    font-weight: 600;
+    width: 50%;
+    transition: .2s ease-in;
+    align-self: flex-start;
+}
+
+.apply:hover{
+    opacity: 0.7;
+    box-shadow: 0px 0px 20px 1px var(--light-blue);
+}
+
+.centered-heading{
+    position: fixed;
+    top: 40%;
+    left: 35%;
+}
+
+.cads{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.emp-profile{
+    border-top-right-radius: 2%;
+    border-top-left-radius: 2%;
+    background-color: white;
+    border-top: 4px solid blue;
+    margin-top: 30px;
+    box-shadow: 0px 0px 20px 1px grey;
+    height: 550px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    width: 35vw;
+}
+
+.centering-div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 800px;
+}
+
+.inputs{
+    display: flex;
+    flex-direction: column;
+    height: 300px;
+    width: 50%;
+    justify-content: space-between;
+}
+
+.enter-profile-pic{
+    display: flex;
+    width: auto;
+    justify-content: space-between;
+    align-items: center;
+}
